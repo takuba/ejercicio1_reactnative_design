@@ -2,10 +2,13 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 export default function footer() {
+  const web = "www.equipo.com";
+  const footerNumero = 123456789;
+
   return (
     <View style={styles.footer}>
-        <Text style={styles.text}>www.equipo.com</Text>
-        <Text style={styles.text}>123456789</Text> 
+        <Text style={styles.text}>{web}</Text>
+        <Text style={styles.text}>{footerNumero}</Text> 
     </View>
   )
 }

@@ -1,13 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 
 export default function Jugador() {
+  const arrayJugadores = ["Jugador 1.1","Jugador 1.2","Jugador 1.3","Jugador 1.4","Jugador 1.5","Jugador 1.6"];
+
   return (
     <View style={styles.asideStyle}>
-        <Text style={styles.text}>Jugador 1.1</Text>
-        <Text style={styles.text}>Jugador 1.2</Text>
-        <Text style={styles.text}>Jugador 1.3</Text>
-        <Text style={styles.text}>Jugador 1.4</Text>
-        <Text style={styles.text}>Jugador 1.5</Text>
+      {arrayJugadores.map((jugador)=>(
+        <Text style={styles.text}>{jugador}</Text>
+      ))}
+
   </View> 
   )
 }
