@@ -1,10 +1,14 @@
 import { StyleSheet, Text, View,Image } from 'react-native'
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
-export default function Perfil() {
+export default function Perfil({clickjugador}) {
+  useEffect(() => {
+    console.log(clickjugador);
+  }, []);
+
   return (
     <View style={styles.jugador}>
-    <Image source={require('../../assets/chaval.png')}  style={{ flex:1 }}></Image>
+    <Image source={{uri:clickjugador}}  style={{ flex:1 }}></Image>
     </View>
   )
 }
