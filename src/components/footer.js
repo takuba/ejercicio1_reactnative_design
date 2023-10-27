@@ -16,12 +16,15 @@ export default function footer() {
 const styles = StyleSheet.create({
     
       text: {
-      color:'red',
-      borderColor:'black',
-      borderWidth:1,
-      fontSize:22,
-      margin:10,
-      padding:4
+        color: '#36395A',
+        borderColor: 'black',
+        borderWidth: 0,
+        fontSize: 22,
+        margin: 10,
+        padding: 10,
+        borderRadius: 4,
+        backgroundColor:"#FCFCFD",
+        //boxShadow: 'rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset'
   
     }, footer: {
         borderColor: 'black',

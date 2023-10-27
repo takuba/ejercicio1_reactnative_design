@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     borderColor:'black',
-    borderWidth:2,
+    borderWidth:1,
 
   
   }

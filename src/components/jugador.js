@@ -110,27 +110,38 @@ const styles = StyleSheet.create({
   
     },
     hoverSimple: {
-      color: 'red',
+      color: '#36395A',
       borderColor: 'black',
-      borderWidth: 1,
+      borderWidth: 0,
       fontSize: 22,
       margin: 10,
-      padding: 4,
+      padding: 10,
+      borderRadius: 4,
+      backgroundColor:"#FCFCFD",
+      boxShadow: 'rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset'
+
     },
     hoverInStyle: {
-      color: 'red',
-      borderColor: 'red',
+      color: '#36395A',
+      borderColor: '#2641de',
       borderWidth: 2,
       fontSize: 22,
       margin: 10,
-      padding: 4,
+      padding: 10,
+      borderRadius: 4,
+      backgroundColor:"#FCFCFD",
+      boxShadow: '-1px 0px 14px 4px rgba(0,51,237,0.72)'
     },
     activeButton: {
-      color: 'blue',
-      borderColor: 'blue',
-      borderWidth: 2,
+      color: '#ffffff',
+      borderColor: 'black',
+      borderWidth: 0,
       fontSize: 22,
       margin: 10,
-      padding: 4,
+      padding: 10,
+      borderRadius: 4,
+      backgroundColor:"black",
+      boxShadow: 'rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #000000 0 -3px 0 inset'
+
     }
 })
