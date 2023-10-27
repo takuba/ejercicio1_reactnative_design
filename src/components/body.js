@@ -4,11 +4,11 @@ import Perfil from './perfil';
 
 
 
-export default function Body({jugadores,clickEquipo,setClickjugador,clickjugador}) {
+export default function Body({jugadores,clickEquipo,setClickjugador,clickjugador,setJugadores}) {
   return (
     <View style={styles.body}>
-        <Jugador jugadores={jugadores} clickEquipo={clickEquipo} setClickjugador={setClickjugador}></Jugador>
-        <Perfil clickjugador={clickjugador} ></Perfil>
+        <Jugador jugadores={jugadores} clickEquipo={clickEquipo} setClickjugador={setClickjugador} setJugadores={setJugadores}></Jugador>
+        <Perfil clickjugador={clickjugador}  ></Perfil>
     </View>
   )
 }

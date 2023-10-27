@@ -48,7 +48,7 @@ export default function App() {
     <View style={styles.container}>
       <Header clickEquipo={clickEquipo} setClickEquipo={setClickEquipo}></Header>
       {jugadores &&  (
-      <Body jugadores={jugadores} clickEquipo={clickEquipo} setClickjugador={setClickjugador} clickjugador={clickjugador}></Body>
+      <Body jugadores={jugadores} clickEquipo={clickEquipo} setClickjugador={setClickjugador} clickjugador={clickjugador} setJugadores={setJugadores}></Body>
       )}
       
       <Footer></Footer>
