@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Platform } from 'react-native'
 import React from 'react'
 
 export default function footer() {
@@ -16,23 +16,46 @@ export default function footer() {
 const styles = StyleSheet.create({
     
       text: {
-        color: '#36395A',
-        borderColor: 'black',
-        borderWidth: 0,
-        fontSize: 22,
-        margin: 10,
-        padding: 10,
-        borderRadius: 4,
-        backgroundColor:"#FCFCFD",
+        ...Platform.select({
+          web: {
+            color: '#36395A',
+            borderColor: 'black',
+            borderWidth: 0,
+            fontSize: 22,
+            margin: 10,
+            padding: 10,
+            borderRadius: 4,
+            backgroundColor:"#FCFCFD",
+          },
+          android: {
+            color: '#36395A',
+            borderColor: 'black',
+            borderWidth: 1,
+            fontSize: 15,
+            margin: 10,
+            padding: 6,
+            backgroundColor:"#FCFCFD",
+          },
+        }),
         //boxShadow: 'rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset'
   
     }, footer: {
-        borderColor: 'black',
-        borderWidth: 2,
-        height:100,
-        flexDirection:'row',
-        justifyContent:'space-between',
-        alignItems:'center',
+      ...Platform.select({
+        web: {
+          borderColor: 'black',
+          borderWidth: 2,
+          height:100,
+          flexDirection:'row',
+          justifyContent:'space-between',
+          alignItems:'center',
+        },
+        android: {
+          flexDirection:'row',
+          justifyContent:'space-between',
+          alignItems:'center',
+        },
+      }),
+
     
       }
 })
